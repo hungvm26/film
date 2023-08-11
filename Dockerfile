@@ -12,6 +12,7 @@ COPY . .
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN composer install
 RUN chown -R www-data:www-data /var/www/film/storage
+RUN cp .env.example .env
 RUN php artisan key:generate
 RUN php artisan migrate
 RUN php artisan db:seed
