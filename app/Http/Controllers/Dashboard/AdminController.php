@@ -11,13 +11,13 @@ use Illuminate\Validation\Rule;
 class AdminController extends Controller
 {
 
-    public function __construct()
-    {
-        $this->middleware(['permission:create_admins,guard:admin'])->only(['create', 'store']);
-        $this->middleware(['permission:read_admins,guard:admin'])->only('index');
-        $this->middleware(['permission:update_admins,guard:admin'])->only(['edit', 'update']);
-        $this->middleware(['permission:delete_admins,guard:admin'])->only('destroy');
-    }
+//    public function __construct()
+//    {
+//        $this->middleware(['permission:create_admins,guard:admin'])->only(['create', 'store']);
+//        $this->middleware(['permission:read_admins,guard:admin'])->only('index');
+//        $this->middleware(['permission:update_admins,guard:admin'])->only(['edit', 'update']);
+//        $this->middleware(['permission:delete_admins,guard:admin'])->only('destroy');
+//    }
 
     /**
      * Display a listing of the resource.

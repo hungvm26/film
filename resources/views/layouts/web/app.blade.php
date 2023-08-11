@@ -175,10 +175,6 @@
         </div>
     </div>
     <div class="ft-copyright">
-        <div class="ft-left">
-            <p><a href="" target="_blank"></a>Made with <i class="ion-ios-heart" style="color: red"></i> by <span
-                        style="color: orangered">Abdullah Shublaq</span></p>
-        </div>
         <div class="backtotop">
             <p><a href="#" id="back-to-top" style="color: #dd003f; font-weight: bold">Back to top <i
                             class="ion-ios-arrow-thin-up"></i></a></p>

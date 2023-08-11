@@ -11,11 +11,11 @@ use Illuminate\Http\Request;
 class RatingController extends Controller
 {
 
-    public function __construct()
-    {
-        $this->middleware(['permission:read_ratings,guard:admin'])->only('index');
-        $this->middleware(['permission:delete_ratings,guard:admin'])->only('destroy');
-    }
+//    public function __construct()
+//    {
+//        $this->middleware(['permission:read_ratings,guard:admin'])->only('index');
+//        $this->middleware(['permission:delete_ratings,guard:admin'])->only('destroy');
+//    }
 
     /**
      * Display a listing of the resource.

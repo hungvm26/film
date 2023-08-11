@@ -13,13 +13,13 @@ use Illuminate\Validation\Rule;
 class FilmController extends Controller
 {
 
-    public function __construct()
-    {
-        $this->middleware(['permission:create_films,guard:admin'])->only(['create', 'store']);
-        $this->middleware(['permission:read_films,guard:admin'])->only('index');
-        $this->middleware(['permission:update_films,guard:admin'])->only(['edit', 'update']);
-        $this->middleware(['permission:delete_films,guard:admin'])->only('destroy');
-    }
+//    public function __construct()
+//    {
+//        $this->middleware(['permission:create_films,guard:admin'])->only(['create', 'store']);
+//        $this->middleware(['permission:read_films,guard:admin'])->only('index');
+//        $this->middleware(['permission:update_films,guard:admin'])->only(['edit', 'update']);
+//        $this->middleware(['permission:delete_films,guard:admin'])->only('destroy');
+//    }
 
     /**
      * Display a listing of the resource.

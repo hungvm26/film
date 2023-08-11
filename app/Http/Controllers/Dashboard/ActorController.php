@@ -11,13 +11,13 @@ use Illuminate\Validation\Rule;
 class ActorController extends Controller
 {
 
-    public function __construct()
-    {
-        $this->middleware(['permission:create_actors,guard:admin'])->only(['create', 'store']);
-        $this->middleware(['permission:read_actors,guard:admin'])->only('index');
-        $this->middleware(['permission:update_actors,guard:admin'])->only(['edit', 'update']);
-        $this->middleware(['permission:delete_actors,guard:admin'])->only('destroy');
-    }
+//    public function __construct()
+//    {
+//        $this->middleware(['permission:create_actors,guard:admin'])->only(['create', 'store']);
+//        $this->middleware(['permission:read_actors,guard:admin'])->only('index');
+//        $this->middleware(['permission:update_actors,guard:admin'])->only(['edit', 'update']);
+//        $this->middleware(['permission:delete_actors,guard:admin'])->only('destroy');
+//    }
 
     /**
      * Display a listing of the resource.

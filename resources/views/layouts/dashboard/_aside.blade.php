@@ -17,6 +17,7 @@
                                             alt="User"></a></div>
                             <div class="detail">
                                 <h4>{{auth()->guard('admin')->user()->name}}</h4>
+                                <small>{{auth()->guard('admin')->user()->getRoles()[0]}}</small>
                             </div>
                         </div>
                     </li>
@@ -25,7 +26,7 @@
                         <a href="{{route('dashboard.home')}}"><i class="zmdi zmdi-home"></i><span>Dashboard</span></a>
                     </li>
 
-                    @if(auth()->guard('admin')->user()->hasPermission('read_admins'))
+                    @if(auth()->guard('admin')->user())
                         <li>
                             <a href="javascript:void(0);" class="menu-toggle"><i class="zmdi zmdi-account"></i><span>Admins</span>
                             </a>
