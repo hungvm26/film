@@ -177,7 +177,27 @@
                                                 <p>{{$film->overview}}</p>
                                                 <hr style="background-color: #405266">
                                                 <br>
-                                                {!! $film->url !!}
+{{--                                                {!! $film->url !!}--}}
+                                                <video
+                                                    id="my-video"
+                                                    class="video-js"
+                                                    controls
+                                                    preload="auto"
+                                                    width="640"
+                                                    height="264"
+                                                    data-setup="{}"
+                                                >
+                                                    <source src="{{ asset('storage/4j.mp4') }}" type="video/mp4"/>
+                                                    <p class="vjs-no-js">
+                                                        To view this video please enable JavaScript, and consider
+                                                        upgrading to a
+                                                        web browser that
+                                                        <a href="https://videojs.com/html5-video-support/"
+                                                           target="_blank"
+                                                        >supports HTML5 video</a
+                                                        >
+                                                    </p>
+                                                </video>
                                             </div>
 
                                         </div>
@@ -296,6 +316,8 @@
 
         <script type="text/javascript">
             $(document).ready(function () {
+                var player = videojs('my-video');
+
                 // alert($('.user_rate').val() !== "");
                 var allowDismiss = true;
                 var user = "{{auth()->user()}}";

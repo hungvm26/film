@@ -17,6 +17,7 @@
     <meta content="" name="keywords">
     <meta content="" name="author">
     <link href="#" rel="profile">
+    <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
 
     @stack('style')
 
@@ -189,6 +190,7 @@
 <script src="{{asset('web_files/js/custom.js')}}"></script>
 
 <script src="{{asset('dashboard_files/assets/plugins/bootstrap-notify/bootstrap-notify.js')}}"></script>
+<script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
 @if(session('success'))
     <script type="text/javascript">
         $(document).ready(function () {
